@@ -1,0 +1,23 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    background-color: azure;
+    color: blanchedalmond;
+    text-align: center;
+    border: 3px solid burlywood;
+}
+
+h2 {
+    color: cornsilk;
+    background-color: cornflowerblue;
+    text-align: left;
+    border: 10px solid seashell;
+}
+
+p { 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: cadetblue;
+}
