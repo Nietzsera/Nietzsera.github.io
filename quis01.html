@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Apa ya? </title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                background-color: bisque; 
+                color: white;
+            }
+            header, nav, footer {
+                text-align: center;
+                padding: 1rem;
+                font-weight: bold;
+            }
+            header {
+                background-color: blanchedalmond;
+                font-size: 2rem;
+            }
+            nav {
+                background-color: aliceblue;
+            }
+            nav a {
+                color: cadetblue;
+                text-decoration: none;
+                margin: 0 10px;
+                position: relative;
+                transition: color 0.3s ease;
+            }
+            nav a ::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -4px;
+                width: 0%;
+                height: 2px;
+                background-color: aqua;
+                transition: woidth 0.3s ease;
+            }
+            nav a:hover {
+                color: cornflowerblue;
+            }
+            nav a:hover::after {
+                width: 100%;
+            }
+           .container {
+            display: flex;
+            flex-direction: row;
+            min-height: 60vh;
+           }
+           .sidebar {
+            flex: 1;
+            background-color: azure;
+            padding: 1rem;
+            text-align: center;
+           }
+           .content {
+            flex: 2;
+            background-color: burlywood;
+            padding: 2rem;
+            text-align: center;
+           }
+           footer {
+            background-color: darkgrey;
+            font-size: 1.2rem;
+           }
+           @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+           }
+        </style>
+    </head>
+    <body>
+        <header>
+            Apa ya
+        </header>
+
+        <nav>
+            Menu Navigasi |
+            <a href="#">Beranda</a> |
+            <a href="3">Tentang</a> |
+            <a href="#">Kontak</a>
+        </nav>
+
+        <div class="container">
+            <aside class="sidebar">
+                <ul>
+                    <li><a href="#" style="color: antiquewhite;">Menu 1</a></li>
+                    <li><a href="#" style="color: aliceblue;">Menu 2</a>
+                </ul>
+            </aside>
+
+            <main class="content">
+                <h2>Konten Utama</h2>
+                <p>Welkam</p>
+                <p>Sini</p>
+            </main>
+
+            <aside class="sidebar">
+               Sidebar Kanan</br>
+               <ul>
+                <li><a href="#" style="color: antiquewhite;">Info 1</a></li>
+                <li><a href="#" style="color: antiquewhite;">Info 2</a></li>
+               </ul>
+            </aside>
+        </div>
+
+        <footer>
+            Footer &copy ; 2025 | Dibuat oleh Saya
+        </footer>
+    </body>
+</html>
